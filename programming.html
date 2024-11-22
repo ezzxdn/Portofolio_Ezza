@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pemrograman</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFEB3B; /* Warna kuning terang */
+        }
+
+        header {
+            background-color: #4DB6AC; /* Warna hijau yang baru */
+        }
+
+        .nav-link {
+            color: #FFF; /* Warna default teks */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            transition: color 0.3s ease; /* Animasi transisi warna */
+        }
+
+        .nav-link:hover {
+            color: #FFEB3B; /* Warna teks saat hover */
+            text-decoration: none; /* Tetap tanpa garis bawah */
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .btn-primary {
+            background-color: #43A047; /* Warna hijau */
+            border-color: #43A047;
+        }
+
+        .btn-primary:hover {
+            background-color: #388E3C; /* Warna hijau lebih gelap */
+        }
+
+        footer {
+            background-color: #F4511E; /* Warna merah oranye */
+        }
+
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+
+        .programming-description {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #4DB6AC;">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/icon.png" alt="Logo" style="height: 40px; border-radius: 50%;">
+        </a>
+
+        <!-- Toggler (Mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#tools">Keahlian</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#kontak">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <header class="text-white py-4">
+        <div class="container text-center">
+            <h1>Portofolio Pemrograman</h1>
+            <p class="lead">Proyek-proyek pemrograman yang saya kerjakan, saat ini semuanya masih menggunakan Java.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- Example of programming project -->
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="img/kasir.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Aplikasi Kasir Sederhana (2023)</h5>
+                        <p class="card-text programming-description">Aplikasi kasir di sebuah toko pastry yang sederhana. Menggunakan Array untuk menyusun datanya.</p>
+                        <a href="https://github.com/ezzxdn/Aplikasi-Kasir-Sederhana/tree/master/UAPPrakAlpro-2311532001" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tambahkan lebih banyak item galeri dengan pola yang sama -->
+            <div class="col-md-4">
+                <div class="card gallery-item">
+                    <img src="img/nilai.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Aplikasi Pengurutan Nilai (2024)</h5>
+                        <p class="card-text programming-description">Aplikasi ini digunakan untuk mengurutkan nilai mahasiswa FTI UNAND berbasis queue dan stack.</p>
+                        <a href="https://github.com/ezzxdn/AplikasiNilai/tree/master/UAPPrakSturkdat-2311532001" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Ezza Addini | Portofolio Pemrograman</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
